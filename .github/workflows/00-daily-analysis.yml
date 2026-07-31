@@ -65,6 +65,8 @@ jobs:
           # ==========================================
           # AI 配置
           # ==========================================
+           # 新增下面这一行：
+          AKSHARE_PROXY_PATCH_TOKEN: ${{ secrets.AKSHARE_PROXY_PATCH_TOKEN }}
           GENERATION_BACKEND: ${{ vars.GENERATION_BACKEND || secrets.GENERATION_BACKEND }}
           GENERATION_FALLBACK_BACKEND: ${{ vars.GENERATION_FALLBACK_BACKEND || secrets.GENERATION_FALLBACK_BACKEND || 'litellm' }}
           GENERATION_BACKEND_TIMEOUT_SECONDS: ${{ vars.GENERATION_BACKEND_TIMEOUT_SECONDS || secrets.GENERATION_BACKEND_TIMEOUT_SECONDS }}
